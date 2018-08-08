@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDS.GitLab.External", "LDS.GitLab.External\LDS.GitLab.External.csproj", "{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{663BEA5F-E83E-46D3-942E-B9F5AFB28AA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDS.GitLab.External", "src\LDS.GitLab.External\LDS.GitLab.External.csproj", "{90BED85B-F57F-47E3-85A2-24696C1955AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{9EC86BCD-014E-4531-96D7-EEA372F0DD8E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BED85B-F57F-47E3-85A2-24696C1955AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BED85B-F57F-47E3-85A2-24696C1955AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BED85B-F57F-47E3-85A2-24696C1955AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BED85B-F57F-47E3-85A2-24696C1955AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90BED85B-F57F-47E3-85A2-24696C1955AB} = {663BEA5F-E83E-46D3-942E-B9F5AFB28AA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FE42A0BA-7EDF-48D7-A4BA-9010F7EBFF23}

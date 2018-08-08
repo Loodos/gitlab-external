@@ -1,7 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>LDS.GitLab.External</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>Loodos Development Team</Authors>
+    <Company>Loodos</Company>
+    <Product>Loodos GitLab External</Product>
+    <Description>test project for GitLab External</Description>
+    <Copyright>Loodos</Copyright>
   </PropertyGroup>
 
 </Project>
