@@ -1,0 +1,21 @@
+image : microsoft/dotnet:latest
+
+variables:
+  VERSION_SUFFIX: "${CI_COMMIT_REF_NAME}-${CI_PIPELINE_IID}"
+
+build:
+  stage: build
+  before_script:
+    - if [ "$CI_COMMIT_REF_NAME" == "master" ]; then VERSION_SUFFIX=""; fi
+  script:
+    - dotnet --info
+    - dotnet clean
+    - dotnet build -c Release --version-suffix=$VERSION_SUFFIX
+    - dotnet pack -c Release --no-build -o ../../artifacts --version-suffix=$VERSION_SUFFIX
+    - dotnet nuget push artifacts/*.nupkg --api-key ${NUGET_LOODOS_API_KEY} --source https://api.nuget.org/v3/index.json
+  artifacts:
+    paths:
+      - artifacts/
+  only:
+    - master
+    - dev

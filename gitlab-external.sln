@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDS.GitLab.External", "LDS.GitLab.External\LDS.GitLab.External.csproj", "{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C680C16-24B3-4AFB-8B15-49E36FA7A0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE42A0BA-7EDF-48D7-A4BA-9010F7EBFF23}
+	EndGlobalSection
+EndGlobal
